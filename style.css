@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color:hsl(204, 43%, 93%);
+}
+
+section {
+   display: flex;
+   flex-direction: column; 
+   height: 100vh;
+   width: 45vw;
+   margin: auto;
+   justify-content: center;
+   border-radius: 0.5rem;
+}
+
+.upper-div {
+    background-color: white;
+    width: 100%;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    padding: 2rem;
+
+}
+
+.lower-div {
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    width: 100%;
+    flex-basis: 40%;
+    justify-content: space-between;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    color: hsl(204, 43%, 93%);
+}
+
+.lower-div-right {
+  
+    height: 100%;
+    flex: 1;
+
+}
+
+.lower-div-left {
+    flex: 1;
+    height: 100%;
+    padding: 1.7rem;
+}
+
+.upper-div h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: hsl(179, 62%, 43%);
+}
+
+.upper-div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.upper-div p {
+    line-height: 1.5rem;
+    color: hsl(218, 22%, 67%);
+    
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.lower-div-left p {
+    margin-bottom: 0.8rem;
+    
+}
+
+.lower-div-left p span:last-child {
+    opacity: 0.7;
+    font-weight: 700;
+}
+
+.lower-div-left a {
+    display: inline-block;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    width: 90%;
+    color: inherit;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.7rem 0;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 10px hsl(179, 62%, 27%);
+    margin-top: 1.5rem;
+}
+
+
+.lower-div-right {
+    background-color: rgba(42, 178, 190);
+    padding: 2rem;
+    border-bottom-right-radius: inherit;
+}
+
+.lower-div-right ul {
+    list-style: none;
+    color: hsl(204, 43%, 93%);
+}
+
+.lower-div-right ul li {
+    margin-bottom: 0.3rem;
+}
+
+.lower-div-left p span#sp {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    display: inline-block;
+    transform: translateY(15%);
+    opacity: 100;
+
+}
+
+@media screen and (max-width: 375px) {
+     section {
+         height: 110vh;
+         margin: auto;
+         width: 90vw;
+     }
+    .lower-div {
+        flex-direction : column;
+        align-items: center;
+    }
+
+    .lower-div-left {
+        width: 100%;
+    }
+
+    .lower-div-right {
+        width: 100%;
+        border-bottom-left-radius: inherit;
+    }
+
+    .lower-div-left  a {
+        width: 100%;
+
+    }
+}
